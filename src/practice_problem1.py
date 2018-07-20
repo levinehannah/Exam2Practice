@@ -279,21 +279,21 @@ class Box(object):
         # IMPORTANT: Write a solution to this problem in pseudo-code,
         # and THEN translate the pseudo-code to a solution.
         # --------------------------------------------------------------
-        oldbirch = len(self.contents)
+        oldie = len(self.contents)
         self.volume = new_volume
         if len(self.contents) > new_volume:
             newcon =  ''
             for k in range(new_volume):
                 newcon += self.contents[k]
 
-            returnpoo = ''
-            for k in range(new_volume,oldbirch):
-                returnpoo += self.contents[k]
+            returnpooo = ''
+            for k in range(new_volume,oldie):
+                returnpooo += self.contents[k]
 
             self.contents = newcon
         else:
-            returnpoo = ''
-        return returnpoo
+            returnpooo = ''
+        return returnpooo
 
 
     def double_then_shrink(self, new_volume):
